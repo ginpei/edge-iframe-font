@@ -15,13 +15,19 @@
     Once loading is done, it works as you expect.
   </p>
   <form id="form">
-    <button>Add</button>
-    <input type="number" id="numFrames" value="3">
-    Frames
-    /
-    <button id="clear" type="button">Clear</button>
-    /
-    <button id="reload" type="button">Reload</button>
+    <p>
+      <button>Add</button>
+      <input type="number" id="numFrames" value="3">
+      Frames
+      /
+      <button id="clear" type="button">Clear</button>
+      /
+      <button id="reload" type="button">Reload</button>
+      <br>
+      <label><input type="checkbox" id="waitCss"> wait for CSS loaded</label>
+      <label><input type="checkbox" id="withText" checked> with text</label>
+      <label><input type="checkbox" id="withCanvas" checked> with canvas</label>
+    </p>
   </form>
   <div id="frames"></div>
   <script src="script.js"></script>
