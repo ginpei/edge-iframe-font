@@ -1,7 +1,6 @@
 // @ts-check
 
 const elForm = document.querySelector('#form');
-const elClear = document.querySelector('#clear');
 const elReload = document.querySelector('#reload');
 const elFrames = document.querySelector('#frames');
 const elNumFrames = document.querySelector('#numFrames');
@@ -117,12 +116,6 @@ function init () {
       const withCanvas = elWithCanvas.checked;
       render(elFrame.contentDocument, 'Barlow', waitCss, withText, withCanvas);
     }
-
-    elClear.addEventListener('click', () => {
-      for (let el = elFrames.firstChild; el; el = elFrames.firstChild) {
-        elFrames.removeChild(el);
-      }
-    });
 
     elReload.addEventListener('click', () => {
       window.location.reload();
